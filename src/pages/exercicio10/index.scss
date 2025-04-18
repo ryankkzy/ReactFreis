@@ -90,13 +90,14 @@
     .exercicio10 {
         .conteiner {
             flex-direction: column;
-
             .campos {
                 display: flex;
                 flex-direction: column;
-                width: 200px;
+                width: 210px;
+                justify-content: center;
                 align-items: center;
-
+                margin: auto;
+                margin-top: 20px;
                 .inputs {
                     display: flex;
                     flex-direction: row;
@@ -120,27 +121,27 @@
                     }
                 }
             }
-        }
 
-        .situacao {
+            .situacao {
+                .informacoes {
+                    gap: 15px;
+                    border-radius: 15px;
+                    width: 280px;
+                    height: 60px;
+                    margin-left: 20px;
 
-            .alinhamento {
-                gap: 20px;
-            }
-
-            .informacoes {
-                gap: 10px;
-                border-radius: 15px;
-                width: 290px;
-
-                h4 {
-                    margin-left: 10px;
+                    h4 {
+                        margin-left: 10px;
+                        font-size: 13px;
+                    }
                 }
-            }
 
-            .icone img {
-                padding: 9px;
+                .icone img {
+                    margin-top: 6px;
+                    padding: 5px;
+                }
             }
         }
     }
 }
+

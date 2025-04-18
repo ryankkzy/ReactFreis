@@ -15,19 +15,14 @@
 
 @media(max-width: 450px) {
     .pagina-inicio {
-        h2 {
-            margin-left: 10px;
-        }
-
-        .exercicios {
-            margin-left: 15px;
-        }
-    }
-
-    .cabecalho {
-        .comp-cabecalho {
-            .logoTitulo {
-                //gap: 10px;
+        .inicio {
+            .titulo {
+                text-align: center;
+            }
+            .exercicios {
+                justify-content: center;
+                align-items: center;
+                margin: auto    ;
             }
         }
     }

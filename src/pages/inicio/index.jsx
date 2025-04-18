@@ -24,7 +24,7 @@ export default function Inicio() {
           <Card card="9" titulo="Sorveteria" subtitulo="Exercicio 9" caminho="9" />
           <Card card="10" titulo="Cálculo de IMC com histórico" subtitulo="Exercicio 10" caminho="10" />
           <Card card="11" titulo="Tabuada" subtitulo="Exercicio 11" caminho="11" />
-          <Card card="12" titulo="Comparador de pessoas" subtitulo="Exercicio 12" caminho="12" />
+         {/*<Card card="12" titulo="Comparador de pessoas" subtitulo="Exercicio 12" caminho="12" />*/}
         </div>
       </div>
     </div>

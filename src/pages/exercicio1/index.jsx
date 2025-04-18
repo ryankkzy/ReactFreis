@@ -24,7 +24,7 @@ export default function Exercicio1() {
                         <input placeholder="0" type="number" onChange={e => setValorPedido(e.target.value)} />
                     </div>
                     <div className="informacao">
-                        <label>Informe o valor do pedido</label>
+                        <label>Informe o valor do desconto</label>
                         <input placeholder="0" type="number" onChange={e => setValorCupom(e.target.value)} />
                     </div>
                     <div className="executar">

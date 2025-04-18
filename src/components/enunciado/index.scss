@@ -37,8 +37,8 @@ $cores: (
         background-color: #fff;
         height: 180px;
         border-radius: 10px;
-        padding: 30px;
-        margin: 10px 70px;
+        padding: 35px;
+        margin: auto;
         text-align: center;
 
 
@@ -60,7 +60,7 @@ $cores: (
             margin-left: 13px;
 
             h2 {
-                font-size: 19px;
+                font-size: 18px;
             }
 
             img {
@@ -74,7 +74,7 @@ $cores: (
         }
 
         .caixa-problema {
-
+            width: 200px;
             p {
                 font-size: 1em;
             }
