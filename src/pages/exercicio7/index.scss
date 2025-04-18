@@ -1,0 +1,61 @@
+.exercicio7 {
+    .conteiner {
+        display: flex;
+        justify-content: center;
+
+        .campos {
+            display: flex;
+            flex-direction: column;
+            background-color: #fff;
+            height: 200px;
+            width: 400px;
+            padding: 30px;
+            margin-top: 20px;
+            border-radius: 10px;
+            gap: 10px;
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
+
+            .informacao {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+
+                input {
+                    border-radius: 10px;
+                    border: 2px solid #c3c3c3;
+                    padding: 10px;
+
+                }
+            }
+        }
+
+        .executar {
+            display: flex;
+            justify-content: end;
+            margin-top: 20px;
+
+            button {
+                background-color: #6278F7;
+                color: #fff;
+                border-radius: 10px;
+                border: 0px;
+                padding: 15px;
+                width: 200px;
+            }
+        }
+    }
+
+    .resultado {
+        text-align: center;
+    }
+}
+
+@media (max-width: 450px) {
+    .exercicio7 {
+        .conteiner {
+            .campos {
+                width: 280px;
+            }
+        }
+    }
+}

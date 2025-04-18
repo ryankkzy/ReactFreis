@@ -1,0 +1,60 @@
+$cores: (
+  "1": #ffa500,
+  "2": #b3ff37,
+  "3": #37fff3,
+  "4": #37b7ff,
+  "5": #cb37ff,
+  "6": #ff5b37,
+  "7": #37ffab,
+  "8": #000000,
+  "9": #d0d0d0,
+  "10": #b75333,
+  "11": #6533b7,
+  "12": #FFCE37
+);
+
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 215px;
+  height: 160px;
+  border-radius: 12px;
+  text-align: center;
+  background-color: #ffffff;
+  text-decoration: none;
+  font-family: "Arial";
+
+  .link {
+    text-decoration: none;
+  }
+
+  .retangulo {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    height: 60px;
+    width: 60px;
+    border-radius: 12px;
+    margin-top: 20px;
+  }
+
+  .titulo {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #383131;
+  }
+
+  .subtitulo {
+    margin-top: 10px;
+    color: #000000;
+    font: 500 13px "Arial";
+  }
+}
+
+@each $key, $color in $cores {
+  .card-#{$key} {
+    .retangulo {
+      background-color: $color;
+    }
+  }
+}

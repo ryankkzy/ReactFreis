@@ -1,0 +1,34 @@
+.pagina-inicio {
+    .inicio {
+        display: flex;
+        flex-direction: column;
+        padding: 70px;
+
+        .exercicios {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 50px;
+            gap: 45px;
+        }
+    }
+}
+
+@media(max-width: 450px) {
+    .pagina-inicio {
+        h2 {
+            margin-left: 10px;
+        }
+
+        .exercicios {
+            margin-left: 15px;
+        }
+    }
+
+    .cabecalho {
+        .comp-cabecalho {
+            .logoTitulo {
+                //gap: 10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,93 @@
+.exercicio3 {
+    .conteiner {
+        display: flex;
+        justify-content: center;
+
+        .campos {
+            display: flex;
+            flex-direction: column;
+            background-color: #fff;
+            height: 120px;
+            width: 480px;
+            padding: 30px;
+            margin-top: 20px;
+            border-radius: 10px;
+            gap: 10px;
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
+
+            .inputs {
+                display: flex;
+                flex-direction: row;
+                gap: 30px;
+
+                .informacao {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+
+                    input {
+                        border-radius: 10px;
+                        border: 2px solid #c3c3c3;
+                        padding: 10px;
+                        width: 100px;
+                    }
+                }
+            }
+
+            .executar {
+                display: flex;
+                justify-content: end;
+                margin-top: 20px;
+
+                button {
+                    background-color: #6278F7;
+                    color: #fff;
+                    border-radius: 10px;
+                    border: 0px;
+                    padding: 15px;
+                    width: 200px;
+                }
+            }
+        }
+    }
+
+    .resultado {
+        text-align: center;
+    }
+}
+
+@media (max-width: 450px) {
+    .exercicio3 {
+        .conteiner {
+            .campos {
+                display: flex;
+                flex-direction: column;
+                width: 280px;
+
+
+                .inputs {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 20px;
+    
+                    .informacao {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 5px;
+    
+                        input {
+                            border-radius: 10px;
+                            border: 2px solid #c3c3c3;
+                            padding: 5px;
+                            width: 50px;
+                        }
+
+                        label {
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

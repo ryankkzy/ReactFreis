@@ -1,0 +1,83 @@
+$cores: (
+    "1": #ffa500,
+    "2": #b3ff37,
+    "3": #37fff3,
+    "4": #37b7ff,
+    "5": #cb37ff,
+    "6": #ff5b37,
+    "7": #37ffab,
+    "8": #000000,
+    "9": #d0d0d0,
+    "10": #b75333,
+    "11": #6533b7,
+    "12": #FFCE37
+);
+
+.enunciado {
+    display: flex;
+    flex-direction: column;
+
+    .informacao {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 10px 0px 0px 70px;
+        gap: 10px;
+    }
+
+    .faixa {
+        height: 4px;
+        margin: 10px 70px;
+    }
+
+    .caixa-problema {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        height: 180px;
+        border-radius: 10px;
+        padding: 30px;
+        margin: 10px 70px;
+        text-align: center;
+
+
+        p {
+            font-size: 1.4em;
+        }
+    }
+}
+
+@each $key, $color in $cores {
+    .faixa-#{$key} {
+        background-color: $color;
+    }
+}
+
+@media (max-width: 450px) {
+    .enunciado {
+        .informacao {
+            margin-left: 13px;
+
+            h2 {
+                font-size: 19px;
+            }
+
+            img {
+                width: 30px;
+            }
+        }
+
+        .faixa {
+            height: 4px;
+            margin: 10px 15px;
+        }
+
+        .caixa-problema {
+
+            p {
+                font-size: 1em;
+            }
+        }
+    }
+}

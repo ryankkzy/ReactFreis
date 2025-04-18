@@ -1,0 +1,42 @@
+.pagina-sobre {
+
+    .conteudo {
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+
+        p {
+            font-size: 2em;
+            text-align: center;
+        }
+
+        .image {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .pagina-sobre {
+        .conteudo {
+            p {
+                font-size: 17px;
+            }
+
+            img {
+                max-width: 70px;
+                max-height: 80px;
+            }
+        }
+    }
+
+    .cabecalho {
+        .comp-cabecalho { 
+            .logoTitulo {
+                margin-left: 25px;
+                gap: 10px;
+            }
+        }
+    }
+}
